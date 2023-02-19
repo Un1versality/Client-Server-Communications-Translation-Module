@@ -6,9 +6,11 @@ Helps you encrypt and decrypt your Client-Server requests with this simple modul
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
 local Translator = require(ReplicatedStorage:FindFirstChild("Translator"));
 
-local EncryptedText = "";
+local EncryptedText = "JZ:MQ2:";
 
-Translator.TranslateEncryptedTranslationToNormalEnglish();
+Translator.TranslateEncryptedTranslationToNormalEnglish(EncyrptedText);
 ```
-INPUT:
-OUTPUT:
+INPUT: JZ:MQ2:
+
+
+OUTPUT: hi
