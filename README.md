@@ -8,9 +8,38 @@ local Translator = require(ReplicatedStorage:FindFirstChild("Translator"));
 
 local EncryptedText = "JZ:MQ2:";
 
-Translator.TranslateEncryptedTranslationToNormalEnglish(EncyrptedText);
+Translator.TranslateEncryptedTranslationToNormalEnglish(EncryptedText);
 ```
-INPUT: JZ:MQ2:
+*INPUT: JZ:MQ2:*
 
 
-OUTPUT: hi
+*OUTPUT: hi*
+
+# TranslateNormalEnglishToEncryptedTranslation
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Translator = require(ReplicatedStorage:FindFirstChild("Translator"));
+
+local NormalEnglish = "hi";
+
+Translator.TranslateNormalEnglishToEncryptedTranslation(NormalEnglish);
+```
+*INPUT: hi*
+
+
+*OUTPUT: JZ:MQ2:*
+
+# TranslateNormalEnglishNumberToEncryptedNumber
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Translator = require(ReplicatedStorage:FindFirstChild("Translator"));
+
+local NormalEnglish = "10"; -- // MUST BE IN A STRING, IT'LL BE CONVERTED TO A NUMBER.
+
+Translator.TranslateNormalEnglishNumberToEncryptedNumber(NormalEnglish);
+```
+*INPUT: 10*
+
+
+*OUTPUT: OM:QX:*
+
