@@ -1,6 +1,24 @@
 # Client-Server-Communications-Translation-Module
 Helps you encrypt and decrypt your Client-Server requests with this simple module where you can make your own alphabet too! This is really helpful and also prevents exploit scripts from running any of the functions.
 
+# Inserting
+1. Copy the contents of "ModuleScript.lua" in the repository
+
+
+2. Open RobloxStudio
+
+
+3. Make a new place or go into any place
+
+
+4. Make a module script in ReplicatedStorage
+
+
+5. Open the ModuleScript you've created and then CTRL + A and BACKSPACE to delete all inside it
+
+
+6. Paste in the ModuleScript of the Translator you've copied before with CTRL + V
+
 # TranslateEncryptedTranslationToNormalEnglish
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
