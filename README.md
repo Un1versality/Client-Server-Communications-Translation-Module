@@ -3,5 +3,12 @@ Helps you encrypt and decrypt your Client-Server requests with this simple modul
 
 # TranslateEncryptedTranslationToNormalEnglish
 ```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local Translator = require(ReplicatedStorage:FindFirstChild("Translator"));
 
+local EncryptedText = "";
+
+Translator.TranslateEncryptedTranslationToNormalEnglish();
 ```
+INPUT:
+OUTPUT:
