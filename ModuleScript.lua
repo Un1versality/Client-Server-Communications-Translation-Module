@@ -88,7 +88,7 @@ Translator.TranslateEncryptedTranslationToNormalEnglish = function(Text)
 	if not RunService:IsServer() then
 		local GetStackTrace = rawget(debug, "traceback")
 		local GottenTrace = GetStackTrace()
-		if not string.find(string.lower(GottenTrace),"animator") then
+		if not string.find(string.lower(GottenTrace),"players") or not string.find(string.lower(GottenTrace),"workspace") or not string.find(string.lower(GottenTrace),"playerscripts") or not string.find(string.lower(GottenTrace),"replicatedfirst") or not string.find(string.lower(GottenTrace),"players") then
 			return warn("[RemoteTranslator] Someone attempted to exploit a important module. Stopping the function.")
 		end
 	end
@@ -111,8 +111,8 @@ Translator.TranslateNormalEnglishToEncryptedTranslation = function(Text)
 	if not RunService:IsServer() then
 		local GetStackTrace = rawget(debug, "traceback")
 		local GottenTrace = GetStackTrace()
-		if not string.find(string.lower(GottenTrace),"animator") then
-			return warn("[ScriptorAC] Someone attempted to exploit a important module. Stopping the function.")
+		if not string.find(string.lower(GottenTrace),"players") or not string.find(string.lower(GottenTrace),"workspace") or not string.find(string.lower(GottenTrace),"playerscripts") or not string.find(string.lower(GottenTrace),"replicatedfirst") or not string.find(string.lower(GottenTrace),"players") then
+			return warn("[RemoteTranslator] Someone attempted to exploit a important module. Stopping the function.")
 		end
 	end
 	local FullyFormedString = ""
@@ -146,8 +146,8 @@ Translator.TranslateNormalEnglishNumberToEncryptedNumber = function(Text)
 	if not RunService:IsServer() then
 		local GetStackTrace = rawget(debug, "traceback")
 		local GottenTrace = GetStackTrace()
-		if not string.find(string.lower(GottenTrace),"animator") then
-			return warn("[ScriptorAC] Someone attempted to exploit a important module. Stopping the function.")
+		if not string.find(string.lower(GottenTrace),"players") or not string.find(string.lower(GottenTrace),"workspace") or not string.find(string.lower(GottenTrace),"playerscripts") or not string.find(string.lower(GottenTrace),"replicatedfirst") or not string.find(string.lower(GottenTrace),"players") then
+			return warn("[RemoteTranslator] Someone attempted to exploit a important module. Stopping the function.")
 		end
 	end
 	local FullyFormedString = ""
